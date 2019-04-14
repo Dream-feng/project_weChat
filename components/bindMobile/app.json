@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/bindMobile/bindMobile"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

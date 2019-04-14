@@ -1,0 +1,8 @@
+{ 
+  "window": {
+    "navigationBarTitleText": "家长模式"
+  },
+  "usingComponents": {
+    "v-set-time": "/components/parentsMode/setTime/index"
+  }
+}

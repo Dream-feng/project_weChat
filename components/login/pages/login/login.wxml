@@ -1,0 +1,4 @@
+<view class="container">
+  <text wx:if="{{checkSession}}">已授权</text>
+  <button wx:else open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">授权登入</button>
+</view>

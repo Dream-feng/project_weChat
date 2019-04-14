@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "v-progressBar": "/components/progress-bar/index"
+  }
+}

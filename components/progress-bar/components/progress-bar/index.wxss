@@ -1,0 +1,29 @@
+.progress-bar {
+  padding: 52rpx 0 16rpx;
+}
+
+.bar-inner {
+  position: relative;
+  height: 4rpx;
+  border-radius: 2rpx;
+  background-color: rgba(131, 132, 132, 0.2275);
+}
+
+.progress {
+  position: absolute;
+  /* width: 100%; */
+  height: 100%;
+  background-color: #80d8cf;
+}
+
+.progress-btn-wrapper {
+  position: absolute;
+  top: -52rpx;
+  left: -46rpx;
+  padding: 0 10rpx;
+}
+
+.progress-btn {
+  width: 58rpx;
+  height: 72rpx;
+}

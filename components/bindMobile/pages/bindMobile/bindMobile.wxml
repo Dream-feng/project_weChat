@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="input-list-wrap">
+    <view class="input-list">
+
+      <!-- 没有组件化 -->
+      <view class="input-wrap">
+        <text class="title">手机号</text>
+        <input value="{{phoneNum}}" bind:blur="onBlurPhoneNum" type="number" focus="true" maxlength="11" />
+        <text wx:if="{{showGetCode}}" class="getcode" bind:tap="getcode">获取验证码</text>
+        <text wx:else class="getcode await">已发送({{awaitTime}})</text>
+      </view>
+      <view class="input-wrap">
+        <text class="title">验证码</text>
+        <input value="{{code}}" bind:blur="onBlurCode" type="number" />
+      </view>
+
+    </view>
+  </view>
+
+  <view class="finish">
+    <button class="finish-btn" bind:tap="finishBtn">完成</button>
+  </view>
+</view>

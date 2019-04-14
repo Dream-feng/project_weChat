@@ -1,0 +1,19 @@
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48rpx;
+  font-weight: 400;
+}
+
+.title-date {
+  flex: 1;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: rgb(52, 67, 65);
+}
+
+.title-unit {
+  font-size: 20rpx;
+  line-height: 28rpx;
+  color: rgb(153, 153, 153);
+}

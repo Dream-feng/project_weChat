@@ -1,0 +1,28 @@
+<view class="container">
+  <text class="title">设置聆听时间限制</text>
+
+  <view class="set-time-wrap">
+    <v-set-time class="set-time"
+                bind:clawTouchEnd="setTimeWorkday"
+                initArea="{{initWorkdayArea}}"
+    />
+  </view>
+  <view class="set-time-wrap">
+    <v-set-time class="set-time"
+                bind:clawTouchEnd="setTimeWeekend"
+                date="{{dateWeekend}}"
+                initArea="{{initWeekendArea}}"
+    />
+  </view>
+
+  <view class="set-password-wrap">
+    <view class="title">设置密码解锁</view>
+    <view class='set-password-cont'>
+      <text>密码</text>
+      <view class="set-password" bind:tap="setPassWord">
+        <text>去设置</text>
+        <image class="arrows" src="/images/parentsMode/arrows@2x.png" />
+      </view>
+    </view>
+  </view>
+</view>

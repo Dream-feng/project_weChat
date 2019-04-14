@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="title">
+    <text class="title-date">{{date}}</text>
+    <text class="title-unit">单位：分钟</text>
+  </view>
+  <view class="scrollbar-wrap">
+    <v-scrollbar bind:clawTouchEnd="clawTouchEnd" timeList="{{timeList}}" initArea="{{initArea}}" />
+  </view>
+</view>

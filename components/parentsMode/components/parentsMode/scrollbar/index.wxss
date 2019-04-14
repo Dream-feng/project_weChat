@@ -1,0 +1,65 @@
+.container {
+  position: relative;
+  margin-bottom: 33rpx;
+}
+
+.progress {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  height: 2rpx;
+  margin: 0 8rpx;
+  background-color: #81D8D0;
+}
+
+.circle-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.circle-wrap {
+  padding: 8rpx;
+}
+
+.circle {
+  position: relative;
+  width: 18rpx;
+  height: 18rpx;
+  border-radius: 50%;
+  background-color: #81D8D0;
+}
+
+.circle text {
+  position: absolute;
+  top: 33rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24rpx;
+  line-height: 24rpx;
+  white-space: nowrap;
+  color: #666;
+}
+
+/* 最后一个元素右对齐 */
+/* .circle text:last-child {
+  left: 100%;
+  transform: translateX(-100%);
+} */
+
+.claw-wrap {
+  position: absolute;
+  top: 50%;
+  left: -10rpx;
+  transform: translateY(-60%);
+  width: 54rpx;
+  height: 54rpx;
+}
+
+.claw-wrap image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

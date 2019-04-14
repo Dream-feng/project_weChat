@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="progress"></view>
+
+  <view class="circle-list">
+    <view class="circle-wrap" bind:tap="clcikCircle" wx:for="{{timeList}}" wx:key="{{index}}">
+      <view class="circle">
+        <text>{{item}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="claw-wrap"
+        style="{{clawStyle}}"
+        catch:touchstart="clawTouchStart"
+        catch:touchmove="clawTouchMove"
+        bind:touchend="clawTouchEnd"
+        bind:touchcancel="clawTouchCancel"
+  >
+    <image src="images/claw@2x.png" />
+  </view>
+</view>

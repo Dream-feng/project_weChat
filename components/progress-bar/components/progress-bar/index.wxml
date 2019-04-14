@@ -1,0 +1,14 @@
+<view class="progress-bar" bind:tap="progressClick">
+  <view class="bar-inner">
+    <view class="progress" style="{{styleProgressWidth}}"></view>
+    <view class="progress-btn-wrapper"
+          style="{{styleTranslateLeft}}"
+          catch:touchstart="progressTouchStart"
+          catch:touchmove="progressTouchMove"
+          bind:touchend="progressTouchEnd"
+          catch:touchcancel="progressTouchcancel"
+    >
+      <image class="progress-btn" src="{{progressBtnImg}}" />
+    </view>
+  </view>
+</view>
