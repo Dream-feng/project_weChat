@@ -1,11 +1,15 @@
 export class BindMobileModel {
 
   checkPhoneNum(num) {
-    const regIsNum = /^\d+$/
+//     const regIsNum = /^\d+$/
     const regLength = /^\d{11}$/
     const reg = /^[1][3,4,5,7,8][0-9]{9}$/ // 检查手机号码是否正确
 
-    if (!num) {
+//     if (!num) {
+//       this.showToast('请输入手机号码')
+//       return
+//     }
+    if (isNaN(num)) {
       this.showToast('请输入手机号码')
       return
     }
